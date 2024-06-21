@@ -24,6 +24,7 @@ Before you start, ensure you have the following installed on your local machine:
 - [dbt](https://www.getdbt.com/)
 - [Snowflake](https://www.snowflake.com/)
 - [Looker](https://looker.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 - Python 3.12
 - Git
 
@@ -33,3 +34,13 @@ Before you start, ensure you have the following installed on your local machine:
    ```bash
    git clone https://github.com/lucasudar/data-engineering-project.git
    cd data-engineering-project
+2. Create DB and schema in Cloud
+3. Setting up the Env
+   ```bash
+   python3 -m venv env
+   source env/bin/activate
+   pip install pandas sqlalchemy psycopg2-binary xlrd openpyxl
+4. Transfer all data to your prepared DB
+   ```bash
+   cd data/
+   python3 trasfer.py
