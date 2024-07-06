@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: surfalytics
+    schema: raw
+    tables:
+      - name: orders
+        identifier: orders
+
+      - name: people
+        identifier: people
+
+      - name: returns
+        identifier: returns
