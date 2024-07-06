@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: src_people
+    description: Raw people data
+    columns:
+      - name: person
+        description: Unique identifier for a person
+        data_tests:
+          - unique
+          - not_null
+
+  - name: src_orders
+    description: Raw orders data
+    columns:
+      - name: customer_id
+        description: Unique identifier for a customer
+        data_tests:
+          - unique
+          - not_null
+
+  - name: src_returns
+    description: Raw returns data
+    columns:
+      - name: order_id
+        description: Unique identifier for an order
+        data_tests:
+          - unique
+          - not_null
